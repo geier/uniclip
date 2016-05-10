@@ -1,3 +1,2 @@
 #!/bin/sh
-
-cat ~/.local/share/uniclip/unicode_complete.txt | choose | awk -F '\t' '{print $1}' | xclip
+cat ~/.local/share/uniclip/unicode_complete.txt | choose 2>&1 | awk -F '  ' '{print $1}' | xclip
